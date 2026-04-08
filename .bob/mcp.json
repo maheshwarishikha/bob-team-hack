@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "terraform-ibm-modules-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/terraform-ibm-modules/tim-mcp.git",
+        "tim-mcp"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "Your-token-here"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "Your-token-here"
+      }
+    }
+  }
+}

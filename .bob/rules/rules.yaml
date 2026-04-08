@@ -1,0 +1,111 @@
+# Global Skill Rules Configuration
+# This file defines fallback strategies and priorities for all skills
+
+# Fallback Strategy Configuration
+fallback_strategy:
+  # Two-tier search approach for information retrieval
+  search_priority:
+    - name: "Local Files First"
+      description: "Always search local project files before external sources"
+      order: 1
+      sources:
+        - type: "local_files"
+          tools: ["search_files", "read_file"]
+          directories: ["MyBoxDocs"]
+      
+    - name: "MCP Knowledge Base Fallback"
+      description: "Use MCP knowledge-base server when local search is insufficient"
+      order: 2
+      sources:
+        - type: "mcp_server"
+          server_name: "knowledge-base"
+          tools: ["search_knowledge"]
+          parameters:
+            n_results: 5
+
+# Search Execution Rules
+search_rules:
+  # Step 1: Local Search
+  local_search:
+    enabled: true
+    priority: 1
+    conditions:
+      - "User asks for information or documentation"
+      - "Question relates to project-specific content"
+    actions:
+      - "Search MyBoxDocs folder using search_files or read_file"
+      - "Look for relevant information related to user's question"
+      - "If found: Provide summary with filename and relevant excerpts"
+      - "Mark search as successful if relevant results found"
+  
+  # Step 2: MCP Fallback
+  mcp_fallback:
+    enabled: true
+    priority: 2
+    trigger_conditions:
+      - "Local search yields NO relevant results"
+      - "Information from local search is insufficient"
+      - "User explicitly requests broader knowledge base search"
+    actions:
+      - "Use knowledge-base MCP server's search_knowledge tool"
+      - "Search with relevant keywords from user's question"
+      - "Provide summary with source information for each finding"
+
+# Result Presentation Rules
+presentation_rules:
+  source_attribution:
+    required: true
+    format: "Clearly indicate which source provided the information"
+    
+  multiple_sources:
+    enabled: true
+    order:
+      - "MyBoxDocs results first"
+      - "Knowledge-base MCP results second"
+    
+  result_format:
+    include:
+      - "Source name (MyBoxDocs or knowledge-base)"
+      - "Filename or document ID"
+      - "Relevant excerpts"
+      - "Summary of findings"
+
+# Priority Matrix
+priority_matrix:
+  information_retrieval:
+    1: "Local project files (MyBoxDocs)"
+    2: "MCP knowledge-base server"
+    3: "Web search (if available)"
+  
+  code_operations:
+    1: "Direct file operations"
+    2: "MCP tools (if applicable)"
+  
+  external_services:
+    1: "MCP servers"
+    2: "Browser actions"
+    3: "Command execution"
+
+# Skill-Specific Overrides
+# Individual skills can override these global rules by specifying their own priorities
+skill_overrides:
+  enabled: true
+  note: "Skills can define custom fallback strategies in their skill.md files"
+  override_format: |
+    To override global rules in a skill.md file, add:
+    ```yaml
+    fallback_override:
+      custom_priority:
+        - source1
+        - source2
+    ```
+
+# Best Practices
+best_practices:
+  - "Always exhaust local sources before external ones"
+  - "Provide clear source attribution for all information"
+  - "Use appropriate n_results parameter for MCP searches (default: 5)"
+  - "Combine results from multiple sources when beneficial"
+  - "Indicate search strategy used in responses"
+
+# Made with Bob
