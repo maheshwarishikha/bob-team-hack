@@ -85,3 +85,5 @@ uv.lock
 /knowledge-base-server/build
 /knowledge-base-server/chroma_data
 node_modules
+
+mcp.json
