@@ -24,7 +24,7 @@
     "knowledge-base": {
       "command": "node",
       "args": [
-        "/Users/sowmya/Desktop/bob-mode/knowledge-base-server/build/index.js"
+        "/Users/<your-name>/Desktop/bob-mode/knowledge-base-server/build/index.js"
       ],
       "env": {
         "CHROMA_HOST": "localhost",
