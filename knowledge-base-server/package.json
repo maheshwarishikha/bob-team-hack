@@ -1,0 +1,32 @@
+{
+  "name": "knowledge-base-server",
+  "version": "0.1.0",
+  "description": "MCP server for querying Chroma vector database knowledge base",
+  "type": "module",
+  "bin": {
+    "knowledge-base-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "chroma",
+    "vector-database",
+    "knowledge-base"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "chromadb": "^1.8.1",
+    "chromadb-default-embed": "^2.14.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

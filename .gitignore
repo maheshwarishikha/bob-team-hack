@@ -80,3 +80,8 @@ uv.lock
 # GitHub App private keys
 *.pem
 *.private-key.pem
+
+/knowledge-base-server/.venv
+/knowledge-base-server/build
+/knowledge-base-server/chroma_data
+node_modules
