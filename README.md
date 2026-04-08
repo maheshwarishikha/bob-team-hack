@@ -1,4 +1,4 @@
-# Bob Team Hack - Intelligent MCP Integration Project
+# Technocrats - Breaking Knowledge Silos
 
 ## 🎯 Overview
 
