@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-15T00:00:00.000Z" agent="Bob" version="21.0.0">
+  <diagram name="MCP Integration Overview" id="mcp-presentation">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" page="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <mxCell id="2" value="Bob AI - Intelligent MCP Integration Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="800" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="840" height="720" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="4" value="Bob AI Assistant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="300" height="70" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="5" value="Intelligent Search Engine - Hierarchical Priority System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="230" width="500" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="6" value="Query Processing" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="7" value="Priority 1: GitHub MCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="330" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="8" value="Primary Source - Always First - Terraform IBM Modules Org" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="395" width="200" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="9" value="Priority 2: TIM-MCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="330" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="10" value="Code-Related Queries - Specialized Search - File and Line Numbers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="395" width="200" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="11" value="Priority 3: Box-Skill" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="330" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="12" value="Internal Docs - MyBoxDocs Folder - Handover Materials" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="580" y="395" width="200" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="13" value="Priority 4: Knowledge Base MCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="330" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="14" value="Custom MCP - Chroma Vector DB - Semantic Search Fallback" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="810" y="395" width="200" height="35" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="15" value="1st" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="16" value="2nd" edge="1" parent="1" source="5" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="17" value="3rd" edge="1" parent="1" source="5" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="18" value="4th" edge="1" parent="1" source="5" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="19" value="MCP Server Configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="470" width="890" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="20" value="GitHub MCP Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="530" width="180" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="21" value="Command: npx" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="120" y="575" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="22" value="Package: @modelcontextprotocol/server-github" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="605" width="180" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="23" value="Auth: GitHub Token" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="120" y="640" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="24" value="TIM-MCP Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="530" width="180" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="25" value="Command: uvx" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="330" y="575" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="26" value="Source: terraform-ibm-modules/tim-mcp" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="605" width="180" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="27" value="Auth: GitHub Token" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="330" y="640" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="28" value="Knowledge Base MCP - Custom" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="530" width="180" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="29" value="Command: node" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="540" y="575" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="30" value="Path: knowledge-base-server/build/index.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="540" y="605" width="180" height="30" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="31" value="Backend: Chroma Vector DB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="540" y="640" width="180" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="32" value="Knowledge Base Tools" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="530" width="260" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="33" value="search_knowledge - Semantic search" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="575" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="34" value="get_document - Retrieve by ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="600" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="35" value="list_documents - List with filters" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="625" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="36" value="get_stats - Collection statistics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="650" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="37" value="add_document - Add new docs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="675" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="38" value="delete_document - Remove docs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="700" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="39" value="Chroma Vector Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="730" width="120" height="80" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="40" value="localhost:8000" edge="1" parent="1" source="31" target="39">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="41" value="Key Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="730" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="42" value="Hierarchical Search Priority" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="775" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="43" value="Intelligent Fallback Mechanism" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="325" y="775" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="44" value="Source Attribution" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="800" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="45" value="Code-Aware Detection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="325" y="800" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="46" value="Semantic Search Capability" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="825" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="47" value="Custom MCP Integration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="325" y="825" width="195" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="48" value="Benefits" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="730" width="260" height="40" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="49" value="Faster Information Retrieval" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="775" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="50" value="Reduced Search Time" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="800" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="51" value="Better Context Awareness" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="825" width="260" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="52" value="Extensible Architecture" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="850" width="125" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="53" value="Fallback Safety Net" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontColor=#000000;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="885" y="850" width="125" height="20" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
