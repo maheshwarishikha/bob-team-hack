@@ -247,6 +247,17 @@ Bob will use the Knowledge Base MCP server for semantic search.
 ```
 Bob will use the `add_document` tool to store the information.
 
+### Some more...
+
+```
+how do we handle release versioning for the modules? what all type of release we generally do?
+OpenShift creates COS bucket on its own. Is there a discussion if we can disable it and how?
+Can we have 4 subnet zones available for a VPC if created using Terraform IBM module
+Facing "insufficent account entitlement" error in watsonx module test. Have we seen this error before? any more information available on this?
+do we have example available for VPC configuration with flow logs? If yes, create a architecture diagram for that example to explain the code
+is there any discussion around implementing an option to enable nodelocal DNS caching and integrate it with openshift service mesh.
+```
+
 ## 🎨 Diagram Generation
 
 The project includes automatic diagram generation capabilities:
