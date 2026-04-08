@@ -1,0 +1,173 @@
+<mxfile host="65bd71144e">
+    <diagram name="MCP Architecture" id="mcp-architecture">
+        <mxGraphModel dx="1444" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="MCP Server Architecture - Bob Integration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="20" width="600" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Bob AI Assistant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="100" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="MCP Protocol Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#000000;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="220" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Communicates via MCP" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Terraform IBM Modules MCP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="340" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="GitHub MCP Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="340" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Knowledge Base MCP Server - Custom" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="340" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Search Priority Rules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="340" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" parent="1" source="4" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" parent="1" source="4" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Command: uvx - Python Package" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="450" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Source: GitHub Repository" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="500" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Command: npx - Node Package" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="450" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Package: @modelcontextprotocol/server-github" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="500" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Command: node - TypeScript/JavaScript" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="450" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Path: knowledge-base-server/build/index.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="500" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Priority 1: Local Files - MyBoxDocs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="450" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Priority 2: Knowledge Base MCP Fallback" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="500" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" parent="1" source="6" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" parent="1" source="7" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" parent="1" source="8" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" parent="1" source="9" target="20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Chroma Vector Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="600" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="HTTP API - localhost:8000" parent="1" source="19" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Collection: knowledge_base" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="700" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Semantic Search - Embeddings" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="740" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" parent="1" source="26" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Knowledge Base MCP Tools" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="600" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="1. search_knowledge - Semantic search" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="660" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="2. get_document - Retrieve by ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="685" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="3. list_documents - List with filters" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="710" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="4. get_stats - Collection statistics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="735" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="5. add_document - Add new docs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="760" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="6. delete_document - Remove docs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontColor=#000000;fontSize=8;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="785" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" parent="1" source="31" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="780" y="550"/>
+                            <mxPoint x="560" y="550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="Information Retrieval Flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="600" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Step 1: User asks Bob a question" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=9;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="650" width="360" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Step 2: Bob searches local files first (MyBoxDocs)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=9;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="680" width="360" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Step 3: If insufficient, fallback to Knowledge Base MCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=9;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="710" width="360" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Step 4: Knowledge Base queries Chroma with semantic search" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=9;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="740" width="360" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Step 5: Results returned to Bob with source attribution" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontColor=#000000;fontSize=9;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="770" width="360" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Fallback" parent="1" source="42" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="460" y="723"/>
+                            <mxPoint x="460" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="Legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#000000;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="840" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Custom MCP Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="880" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="External MCP Servers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="880" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Configuration/Rules" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="880" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Backend Services" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#0078D4;strokeColor=#001E4E;fontColor=#ffffff;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="880" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Implementation Details" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="880" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Data Storage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#000000;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="880" width="100" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
