@@ -6,7 +6,7 @@ This project demonstrates an advanced implementation of Model Context Protocol (
 
 ## 🏗️ Architecture
 
-![MCP Integration Architecture](./reference-architecture/mcp-integration-presentation.png)
+![MCP Integration Architecture](./reference-architecture/mcp-architecture-diagram.png)
 
 The system implements a sophisticated multi-tier search strategy that intelligently routes queries through various MCP servers based on priority and context.
 
