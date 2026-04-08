@@ -108,6 +108,10 @@ The system implements a sophisticated multi-tier search strategy that intelligen
 
 **Backend**: Chroma Vector Database (localhost:8000)
 
+| | |
+|---|---|
+![Chroma Installation](./reference-architecture/chroma-install.png)|![Chroma Installation](./reference-architecture/chroma-install-2.png)
+
 ## 📊 Search Flow Decision Tree
 
 ```
